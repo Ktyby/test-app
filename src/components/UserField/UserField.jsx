@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
+import PropTypes from "prop-types";
 
 import "./style.css";
 
