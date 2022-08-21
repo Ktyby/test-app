@@ -3,3 +3,39 @@
   align-items: center;
   flex-direction: column;
 }
+
+.form__input {
+  width: 200px;
+  height: 30px;
+
+  margin-bottom: 10px;
+  padding: 0 10px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #fcd911;
+  color: #000;
+
+  cursor: pointer;
+}
+
+.form__button {
+  width: 120px;
+  height: 30px;
+
+  margin-top: 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #fcd911;
+  cursor: pointer;
+
+  transition: 0.4s;
+}
+
+.form__button:hover {
+  background-color: #000;
+  color: #fff;
+}

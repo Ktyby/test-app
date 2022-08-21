@@ -34,7 +34,7 @@ const App = ({ itemsPerPage }) => {
     const endOffset = itemOffset + itemsPerPage;
     setUsers(users.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(users.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage, usersFromStore.users]);
+  }, [itemOffset, itemsPerPage, usersFromStore]);
 
   const handlePageClick = (event) => {
     const newOffset =
@@ -50,9 +50,11 @@ const App = ({ itemsPerPage }) => {
       </button>
       <div className="main__paginate-container">
         <table>
-          {users.map((user) => (
-            <UserField key={user.id} user={user} />
-          ))}
+          <tbody>
+            {users.map((user) => (
+              <UserField key={user.id} user={user} />
+            ))}
+          </tbody>
         </table>
         <ReactPaginate
           breakLabel="..."

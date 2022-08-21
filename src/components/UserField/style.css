@@ -1,0 +1,28 @@
+.user-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 800px;
+}
+
+.user-cell {
+  color: #fff;
+  width: 200px;
+}
+
+.user-cell__button {
+  width: 150px;
+  height: 35px;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.user-field__button:hover {
+  background-color: #000;
+  color: #fff;
+}
