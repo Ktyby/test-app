@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { useDispatch } from "react-redux";
 
 import "./style.css";
 
@@ -13,12 +14,16 @@ const UserField = ({ user }) => {
   const [displayModal, setDisplayModal] = useState(false);
   const [displayConfirmation, setDisplayConfirmation] = useState(false);
 
+  const dispatch = useDispatch();
+
   const { handleModalShow, handleModalClose } = useModal({
     setDisplayModal,
   });
 
   const handleDeleteUser = useHandleDeleteUser({
     setDisplayConfirmation,
+    dispatch,
+    id: user.id,
   });
 
   const handleEditUser = useHandleEditUser({
@@ -32,11 +37,7 @@ const UserField = ({ user }) => {
       <td className="user-cell">{user.birthday}</td>
       <td className="user-cell">{user.email}</td>
       <td className="user-cell">
-        <button
-          className="user-cell__button"
-          value={user.id}
-          onClick={handleModalShow}
-        >
+        <button className="user-cell__button" onClick={handleModalShow}>
           Edit
         </button>
       </td>
