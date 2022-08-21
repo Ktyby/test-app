@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components => UserField should render UserField component 1`] = `
+<tr>
+  <td
+    className="user-cell"
+  >
+    Verstappen
+  </td>
+  <td
+    className="user-cell"
+  >
+    Max
+  </td>
+  <td
+    className="user-cell"
+  >
+    2022-08-07
+  </td>
+  <td
+    className="user-cell"
+  >
+    max.verstappen@gmail.com
+  </td>
+  <td
+    className="user-cell"
+  >
+    <button
+      className="user-cell__button"
+      onClick={[Function]}
+    >
+      Edit
+    </button>
+  </td>
+  <td
+    className="user-cell"
+  >
+    <button
+      className="user-cell__button"
+      onClick={[Function]}
+    >
+      Delete
+    </button>
+  </td>
+</tr>
+`;

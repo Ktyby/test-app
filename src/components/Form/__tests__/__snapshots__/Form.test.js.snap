@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components => Form should render Form component 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <input
+    className="form__input"
+    name="name"
+    pattern="^[A-Za-z]+$"
+    placeholder="name"
+    required={true}
+    title="You can use only latin letters for the name"
+    type="text"
+  />
+  <input
+    className="form__input"
+    name="surname"
+    pattern="^[A-Za-z]+$"
+    placeholder="surname"
+    required={true}
+    title="You can use only latin letters for the name"
+    type="text"
+  />
+  <input
+    className="form__input"
+    name="email"
+    placeholder="email"
+    required={true}
+    type="email"
+  />
+  <input
+    className="form__input"
+    name="birthday"
+    required={true}
+    type="date"
+  />
+  <button
+    className="form__button"
+    type="submit"
+  >
+    Save
+  </button>
+</form>
+`;

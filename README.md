@@ -2,11 +2,14 @@
 
 SPA that collects, and stores data from user input
 
+## Note
+
+I don't see any reasons for error handling here. 'Cause we have CRUD operations to redux store. I can't imagine the circumstances under which working with the store could cause an error.
+
 ## Technologies
 
 - React
 - Redux (Redux-Persist)
-- React-Portals
 
 ## Development
 
