@@ -3,14 +3,15 @@ import PropTypes from "prop-types";
 
 import "./style.css";
 
-const Form = () => (
-  <form className="form">
+const Form = ({ userData, onSubmit }) => (
+  <form className="form" onSubmit={onSubmit}>
     <input
       required={true}
       className="form__input"
       type="text"
       name="name"
       placeholder="name"
+      defaultValue={userData && userData.name}
     />
     <input
       required={true}
@@ -18,6 +19,7 @@ const Form = () => (
       type="text"
       placeholder="surname"
       name="surname"
+      defaultValue={userData && userData.surname}
     />
     <input
       required={true}
@@ -25,12 +27,14 @@ const Form = () => (
       type="email"
       name="email"
       placeholder="email"
+      defaultValue={userData && userData.email}
     />
     <input
       required={true}
       className="form__input"
       type="date"
       name="birthday"
+      defaultValue={userData && userData.birthday}
     />
     <button className="form__button" type="submit">
       Save
@@ -38,8 +42,14 @@ const Form = () => (
   </form>
 );
 
-Form.propTypes = {};
+Form.propTypes = {
+  userData: PropTypes.object,
+  onSubmit: PropTypes.func,
+};
 
-Form.defaultProps = {};
+Form.defaultProps = {
+  userData: {},
+  onSubmit: () => {},
+};
 
 export default Form;
