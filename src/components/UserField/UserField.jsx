@@ -28,6 +28,8 @@ const UserField = ({ user }) => {
 
   const handleEditUser = useHandleEditUser({
     handleModalClose,
+    dispatch,
+    id: user.id,
   });
 
   return (
