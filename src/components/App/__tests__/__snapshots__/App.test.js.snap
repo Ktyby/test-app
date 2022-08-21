@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components => App should render App component 1`] = `
+<div
+  className="main"
+>
+  <button
+    className="main__button"
+    onClick={[Function]}
+  >
+    Create person
+  </button>
+  <div
+    className="main__paginate-container"
+  >
+    <table>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;

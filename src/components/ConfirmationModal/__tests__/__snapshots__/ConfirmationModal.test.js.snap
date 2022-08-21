@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components => ConfirmationModal should render ConfirmationModal component 1`] = `
+<div
+  className="overlay"
+  onClick={[Function]}
+>
+  <div
+    className="modal"
+  >
+    <div
+      className="modal__heading"
+    >
+      <h3
+        className="modal__title"
+      >
+        Confirmation
+      </h3>
+      <button
+        className="modal__close"
+        onClick={[Function]}
+      >
+        ╳
+      </button>
+    </div>
+    <div
+      className="confirmation-modal__content"
+    >
+      <p
+        className="confirmation-modal__text"
+      >
+        Are You sure?
+      </p>
+    </div>
+    <div
+      className="confirmation-modal__buttons"
+    >
+      <button
+        className="confirmation-modal__button"
+        onClick={[Function]}
+      >
+        Yep
+      </button>
+      <button
+        className="confirmation-modal__button"
+        onClick={[Function]}
+      >
+        Nope
+      </button>
+    </div>
+  </div>
+</div>
+`;
