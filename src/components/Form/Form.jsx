@@ -12,6 +12,8 @@ const Form = ({ userData, onSubmit }) => (
       name="name"
       placeholder="name"
       defaultValue={userData && userData.name}
+      pattern={"^[A-Za-z]+$"}
+      title="You can use only latin letters for the name"
     />
     <input
       required={true}
@@ -19,6 +21,8 @@ const Form = ({ userData, onSubmit }) => (
       type="text"
       placeholder="surname"
       name="surname"
+      pattern={"^[A-Za-z]+$"}
+      title="You can use only latin letters for the name"
       defaultValue={userData && userData.surname}
     />
     <input
